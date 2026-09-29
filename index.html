@@ -1,20 +1,474 @@
 <!DOCTYPE html>
 <html lang="de">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Stressfrei Essen</title>
-</head>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>stressfreiessen – Der Familien-Ernährungsplan</title>
+    <meta
+      name="description"
+      content="Stressfrei essen: der Familien-Ernährungsplan für Familien mit kleinen Kindern. Einfach, schnell, alltagstauglich – und er spart bares Geld."
+    />
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Caveat:wght@600;700&family=Nunito:wght@500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <a class="skip" href="#inhalt">Zum Inhalt</a>
 
-<body>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="brand" href="#start">
+          <svg class="logo-mark" viewBox="0 0 56 48" aria-hidden="true">
+            <circle cx="22" cy="28" r="14" fill="#8FBF4A" />
+            <circle cx="35" cy="26" r="14.5" fill="#2F7A34" />
+            <path
+              d="M33 13c2.2-6 8.4-7.6 11-5.2-3.2 1-4.6 4.2-4.2 7.2"
+              fill="#2F7A34"
+            />
+            <ellipse
+              cx="31"
+              cy="14"
+              rx="6"
+              ry="3.2"
+              transform="rotate(-28 31 14)"
+              fill="#7CB342"
+            />
+          </svg>
+          <span class="brand-text">
+            <strong>stressfreiessen</strong>
+            <span>Der Familien-Ernährungsplan</span>
+          </span>
+        </a>
 
-    <h1>Stressfrei Essen</h1>
+        <button
+          class="nav-toggle"
+          type="button"
+          aria-expanded="false"
+          aria-controls="seitennav"
+        >
+          <span class="sr-only">Menü</span>
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
 
-    <h2>Willkommen auf meiner Website</h2>
+        <nav id="seitennav" class="site-nav" aria-label="Hauptnavigation">
+          <a href="#start">Start</a>
+          <a href="#produkt">Das Produkt</a>
+          <a href="#vorteile">Deine Vorteile</a>
+          <a href="#ablauf">So funktioniert's</a>
+          <a href="#faq">FAQs</a>
+        </nav>
 
-    <p>
-        Hier entsteht meine neue Website rund um stressfreies Essen.
-    </p>
+        <a class="btn btn-green btn-small header-cta" href="#produkt">Jetzt loslegen</a>
+      </div>
+    </header>
 
-</body>
+    <main id="inhalt">
+      <section class="hero" id="start">
+        <div class="container hero-grid">
+          <div class="hero-copy">
+            <h1>
+              STRESSFREI ESSEN
+              <svg class="heart" viewBox="0 0 32 30" aria-hidden="true">
+                <path
+                  d="M16 27S3 18.5 3 10.5C3 6.4 6.2 3.5 10 3.5c2.2 0 4.1 1 6 2.8 1.9-1.8 3.8-2.8 6-2.8 3.8 0 7 2.9 7 7C29 18.5 16 27 16 27z"
+                  fill="none"
+                  stroke="#F07A4A"
+                  stroke-width="2.4"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </h1>
+            <p class="hero-sub">Der Familien-Ernährungsplan</p>
+            <p class="hero-for">für Familien mit kleinen Kindern</p>
+            <p class="brush">Einfach · Schnell · Alltagstauglich · Spart bares Geld</p>
+
+            <ul class="hero-points">
+              <li>
+                <svg viewBox="0 0 32 32" aria-hidden="true">
+                  <circle cx="16" cy="16" r="11" fill="none" stroke="currentColor" stroke-width="1.8" />
+                  <path d="M16 10v7l4 2.5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" />
+                </svg>
+                <span>Max. 20–30 Min.<br />Kochzeit</span>
+              </li>
+              <li>
+                <svg viewBox="0 0 32 32" aria-hidden="true">
+                  <circle cx="11" cy="12" r="3.2" fill="none" stroke="currentColor" stroke-width="1.7" />
+                  <circle cx="21" cy="12" r="3.2" fill="none" stroke="currentColor" stroke-width="1.7" />
+                  <path d="M5.5 24c.6-3.4 3-5.2 5.5-5.2s4.8 1.8 5.4 5.2M15.6 24c.6-3.4 3-5.2 5.5-5.2 2.4 0 4.8 1.8 5.4 5.2" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" />
+                </svg>
+                <span>Portionen frei<br />skalierbar<br />(2–8 Personen)</span>
+              </li>
+              <li>
+                <svg viewBox="0 0 32 32" aria-hidden="true">
+                  <rect x="6" y="8" width="20" height="17" rx="2.5" fill="none" stroke="currentColor" stroke-width="1.8" />
+                  <path d="M6 13h20M11 6v4M21 6v4" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" />
+                </svg>
+                <span>7-Tage<br />Plan</span>
+              </li>
+            </ul>
+
+            <a class="btn btn-orange btn-large" href="#produkt">
+              Jetzt den Ernährungsplan sichern
+              <span aria-hidden="true">→</span>
+            </a>
+
+            <ul class="trust">
+              <li>
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M12 4v11M8 11l4 4 4-4M5 19h14" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+                Sofort-Download
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M12 3l7 3v6c0 4.2-2.8 7.2-7 8.5C7.8 19.2 5 16.2 5 12V6l7-3z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round" />
+                  <path d="M9 12l2 2 4-4" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" />
+                </svg>
+                Sicher bezahlen
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M12 19s-6.5-4-6.5-8.2C5.5 8.4 7.4 7 9.4 7c1.2 0 2.2.6 2.6 1.5C12.4 7.6 13.4 7 14.6 7c2 0 3.9 1.4 3.9 3.8C18.5 15 12 19 12 19z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round" />
+                </svg>
+                Von Eltern für Eltern
+              </li>
+            </ul>
+          </div>
+
+          <figure class="hero-visual">
+            <img
+              src="assets/hero.png"
+              width="1156"
+              height="880"
+              alt="Eine Mutter kocht mit zwei Kindern. Neben ihnen liegen der 7-Tage-Familien-Ernährungsplan und ein Wochenplan auf dem Tablet. Darüber steht: Mehr Familienzeit. Weniger Stress. Leckeres Essen."
+            />
+          </figure>
+        </div>
+      </section>
+
+      <section class="band" aria-label="Das steckt drin">
+        <div class="container band-grid">
+          <article>
+            <span class="icon-bubble">
+              <svg viewBox="0 0 32 32" aria-hidden="true">
+                <path d="M7 10h18l-1.6 12.2a2 2 0 0 1-2 1.8H10.6a2 2 0 0 1-2-1.8L7 10z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round" />
+                <path d="M12 10V8.5A4 4 0 0 1 16 5a4 4 0 0 1 4 3.5V10" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" />
+              </svg>
+            </span>
+            <p><strong>Gezielt einkaufen</strong> statt spontan – spürbar Geld sparen</p>
+          </article>
+          <article>
+            <span class="icon-bubble">
+              <svg viewBox="0 0 32 32" aria-hidden="true">
+                <path d="M16 6c2 4 6 5 6 10a6 6 0 0 1-12 0c0-5 4-6 6-10z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round" />
+                <path d="M16 14c-2 2-2 4 0 6" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" />
+              </svg>
+            </span>
+            <p><strong>Einfache Rezepte</strong> mit alltagstauglichen Zutaten</p>
+          </article>
+          <article>
+            <span class="icon-bubble">
+              <svg viewBox="0 0 32 32" aria-hidden="true">
+                <path d="M9 14h14a6 6 0 0 1-6 8h-2a6 6 0 0 1-6-8z" fill="none" stroke="currentColor" stroke-width="1.7" />
+                <path d="M12 14c0-4 2-7 4-8 2 1 4 4 4 8M16 22v4M12 26h8" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" />
+              </svg>
+            </span>
+            <p><strong>Max. 20–30 Minuten</strong> Kochzeit pro Mahlzeit</p>
+          </article>
+          <article>
+            <span class="icon-bubble">
+              <svg viewBox="0 0 32 32" aria-hidden="true">
+                <circle cx="10" cy="12" r="2.6" fill="none" stroke="currentColor" stroke-width="1.6" />
+                <circle cx="16" cy="11" r="2.6" fill="none" stroke="currentColor" stroke-width="1.6" />
+                <circle cx="22" cy="12" r="2.6" fill="none" stroke="currentColor" stroke-width="1.6" />
+                <path d="M5 24c.4-3 2.4-4.6 4.6-4.6S14 21 14.4 24M11.6 24c.4-3 2.4-4.6 4.4-4.6s4 1.6 4.4 4.6M18 24c.4-3 2.2-4.6 4.4-4.6 2.2 0 4 1.6 4.4 4.6" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" />
+              </svg>
+            </span>
+            <p><strong>Für 2 bis 8 Personen</strong> flexibel anpassbar</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="compare-section" aria-labelledby="problem-titel">
+        <div class="container compare">
+          <article class="panel panel-problem">
+            <h2 id="problem-titel">Kennst du das?</h2>
+            <ul class="ticks ticks-no">
+              <li>Tägliches Grübeln: Was koche ich heute?</li>
+              <li>Spontankäufe und zu hohe Ausgaben</li>
+              <li>Lebensmittel, die am Ende im Müll landen</li>
+              <li>Komplizierte Rezepte und lange Kochzeiten</li>
+              <li>Gestresster Familienalltag</li>
+            </ul>
+          </article>
+
+          <div class="compare-arrow" aria-hidden="true">
+            <svg viewBox="0 0 90 56">
+              <path d="M8 34c20-22 40-22 62-6" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" />
+              <path d="M58 16l16 12-18 8" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+          </div>
+
+          <article class="panel panel-solution">
+            <h2>
+              Die Lösung:
+              <span class="sparks" aria-hidden="true"></span>
+            </h2>
+            <ul class="ticks ticks-yes">
+              <li>Fertiger 7-Tage Plan – klare Orientierung</li>
+              <li>Vollständige Einkaufsliste – nur die Zutaten, die du brauchst</li>
+              <li>Einfache, familientaugliche Rezepte</li>
+              <li>Max. 20–30 Minuten Kochzeit</li>
+              <li>Weniger Food-Waste und mehr Kontrolle über dein Budget</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section class="bundles" id="produkt">
+        <div class="container">
+          <header class="section-head">
+            <h2>Wähle dein passendes Bundle</h2>
+            <p>
+              Beide Bundles enthalten den vollständigen 7-Tage Familien-Ernährungsplan.<br />
+              Das Komplett-Bundle bietet dir zusätzlichen Mehrwert für einen noch entspannteren Familienalltag.
+            </p>
+          </header>
+
+          <div class="bundle-grid">
+            <article class="bundle">
+              <div class="bundle-layout">
+                <div class="sheet-stack" aria-hidden="true">
+                  <div class="sheet sheet-basis">
+                    <div class="sheet-photo">
+                      <span class="bowl"></span>
+                    </div>
+                    <div class="sheet-body">
+                      <strong>7-Tage Plan</strong>
+                      <span></span>
+                      <span></span>
+                      <span class="short"></span>
+                    </div>
+                  </div>
+                </div>
+                <div class="bundle-copy">
+                  <p class="bundle-kicker">Bundle</p>
+                  <h3>Basis</h3>
+                  <p class="bundle-desc">Der 7-Tage Ernährungsplan</p>
+                  <p class="price price-green"><span>CHF</span> 14.90</p>
+                  <ul class="ticks ticks-yes">
+                    <li>7-Tage Ernährungsplan (Frühstück, Mittag, Abend)</li>
+                    <li>Vollständige Einkaufsliste mit Kategorien</li>
+                    <li>Portionsrechner (2–8 Personen)</li>
+                    <li>Einfache Rezepte (max. 5–7 Zutaten, max. 30 Min.)</li>
+                    <li>Alternativ- und Austauschoptionen</li>
+                    <li>Meal-Prep &amp; Zeitspar-Tipps</li>
+                    <li>Spar-Tipps: So senkst du deine Ausgaben</li>
+                    <li>Haftungsausschluss &amp; Allergenhinweis</li>
+                  </ul>
+                </div>
+              </div>
+              <button class="btn btn-green btn-block" type="button" data-bundle="Basis" data-price="14.90">
+                Jetzt Basis-Bundle sichern <span aria-hidden="true">→</span>
+              </button>
+            </article>
+
+            <article class="bundle bundle-featured">
+              <p class="badge">Beliebteste Wahl</p>
+              <div class="bundle-layout bundle-layout-flip">
+                <div class="bundle-copy">
+                  <p class="bundle-kicker">Bundle</p>
+                  <h3>Komplett</h3>
+                  <p class="bundle-desc">Der 14-Tage Familien-Ernährungsplan inkl. Bonus-Inhalte</p>
+                  <p class="price price-orange"><span>CHF</span> 24.90</p>
+                  <ul class="ticks ticks-yes">
+                    <li>Alles aus dem <strong class="nowrap">Basis-Bundle</strong></li>
+                    <li>14-Tage Ernährungsplan</li>
+                    <li>5 Notfall-Mahlzeiten für stressige Tage</li>
+                    <li>Tipps: Wie Kinder gerne mitessen</li>
+                    <li>Wochenplan zum Ausdrucken</li>
+                    <li>Snack-Liste für unterwegs</li>
+                    <li>Community-Zugang zum Austausch mit anderen Familien</li>
+                  </ul>
+                </div>
+                <div class="sheet-stack sheet-stack-multi" aria-hidden="true">
+                  <div class="sheet sheet-week">
+                    <p>Wochenplan</p>
+                    <div class="mini-grid"></div>
+                  </div>
+                  <div class="sheet sheet-snack">
+                    <p>Snack-Liste</p>
+                    <span></span>
+                    <span></span>
+                    <span class="short"></span>
+                  </div>
+                  <div class="sheet sheet-quick">
+                    <p>In 20 Minuten</p>
+                    <div class="sheet-photo sheet-photo-small"><span class="bowl bowl-small"></span></div>
+                  </div>
+                </div>
+              </div>
+              <button class="btn btn-orange btn-block" type="button" data-bundle="Komplett" data-price="24.90">
+                Jetzt Komplett-Bundle sichern <span aria-hidden="true">→</span>
+              </button>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="benefits" id="vorteile">
+        <div class="container">
+          <h2 class="brush brush-title">Deine Vorteile auf einen Blick</h2>
+          <div class="benefit-row">
+            <article>
+              <span class="icon-bubble icon-peach">
+                <svg viewBox="0 0 32 32" aria-hidden="true">
+                  <ellipse cx="15" cy="18" rx="9" ry="6.5" fill="none" stroke="currentColor" stroke-width="1.7" />
+                  <path d="M8.5 14.5c-.4-2.4 1.4-4 2.8-3.2" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" />
+                  <ellipse cx="22.5" cy="17.5" rx="2.3" ry="1.7" fill="none" stroke="currentColor" stroke-width="1.6" />
+                  <circle cx="12.2" cy="17" r="0.8" fill="currentColor" />
+                  <path d="M12 23.2v1.8M18 23.2v1.8" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" />
+                </svg>
+              </span>
+              <p><strong>Spart bares Geld</strong> Gezielt einkaufen statt willkürlich.</p>
+            </article>
+            <article>
+              <span class="icon-bubble icon-peach">
+                <svg viewBox="0 0 32 32" aria-hidden="true">
+                  <circle cx="16" cy="16" r="9" fill="none" stroke="currentColor" stroke-width="1.7" />
+                  <path d="M16 11v6l4 2" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" />
+                </svg>
+              </span>
+              <p><strong>Mehr Zeit</strong> Max. 20–30 Min. Kochzeit.</p>
+            </article>
+            <article>
+              <span class="icon-bubble icon-peach">
+                <svg viewBox="0 0 32 32" aria-hidden="true">
+                  <path d="M16 26s-8-5.2-8-11.2C8 11 10.4 9 13.2 9c1.6 0 2.9.8 3.8 2 1-1.2 2.2-2 3.8-2C23.6 9 26 11 26 14.8 26 20.8 16 26 16 26z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round" />
+                </svg>
+              </span>
+              <p><strong>Weniger Stress</strong> Kein tägliches Grübeln mehr.</p>
+            </article>
+            <article>
+              <span class="icon-bubble icon-peach">
+                <svg viewBox="0 0 32 32" aria-hidden="true">
+                  <circle cx="11" cy="13" r="2.5" fill="none" stroke="currentColor" stroke-width="1.6" />
+                  <circle cx="21" cy="13" r="2.5" fill="none" stroke="currentColor" stroke-width="1.6" />
+                  <path d="M6 24c.5-3.2 2.6-5 5-5s4.4 1.8 5 5M16 24c.5-3.2 2.6-5 5-5s4.4 1.8 5 5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" />
+                </svg>
+              </span>
+              <p><strong>Zufriedene Kinder</strong> Einfache, leckere Mahlzeiten.</p>
+            </article>
+            <article class="benefit-cta">
+              <a class="btn btn-green" href="#produkt">Jetzt loslegen</a>
+              <p>Stressfrei essen – für einen entspannteren Familienalltag. <span aria-hidden="true">♡</span></p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="steps" id="ablauf">
+        <div class="container">
+          <header class="section-head">
+            <h2>So funktioniert's</h2>
+            <p>Drei Schritte von der Auswahl bis zur Mahlzeit – ohne langes Planen am Abend.</p>
+          </header>
+          <ol class="step-grid">
+            <li>
+              <span>1</span>
+              <h3>Bundle wählen</h3>
+              <p>Basis für eine klare Woche oder Komplett mit 14 Tagen, Notfallgerichten und Snack-Liste.</p>
+            </li>
+            <li>
+              <span>2</span>
+              <h3>Liste in die Hand nehmen</h3>
+              <p>Wochenplan, Rezepte und Einkaufsliste sagen dir genau, was du brauchst – und was nicht.</p>
+            </li>
+            <li>
+              <span>3</span>
+              <h3>In 20–30 Minuten kochen</h3>
+              <p>Wenige Zutaten, kurze Zeiten, Gerichte, die auch mit Kindern am Tisch funktionieren.</p>
+            </li>
+          </ol>
+        </div>
+      </section>
+
+      <section class="faq" id="faq">
+        <div class="container faq-wrap">
+          <header class="section-head">
+            <h2>FAQs</h2>
+            <p>Kurz beantwortet, bevor du dich für ein Bundle entscheidest.</p>
+          </header>
+          <div class="accordion">
+            <details open>
+              <summary>Für wen ist der Plan gedacht?</summary>
+              <p>Für Familien mit kleinen Kindern, die den Alltag am Herd einfacher machen wollen. Die Portionen lassen sich von 2 bis 8 Personen anpassen.</p>
+            </details>
+            <details>
+              <summary>Was unterscheidet Basis und Komplett?</summary>
+              <p>Beide enthalten den vollständigen 7-Tage-Plan mit Einkaufsliste und Rezepten. Komplett ergänzt das um einen 14-Tage-Plan, fünf Notfall-Mahlzeiten, Mitess-Tipps, einen Wochenplan zum Ausdrucken, eine Snack-Liste und den Community-Zugang.</p>
+            </details>
+            <details>
+              <summary>Wie lange dauert eine Mahlzeit?</summary>
+              <p>Die Rezepte sind auf maximal 20–30 Minuten ausgelegt und kommen mit etwa 5–7 alltagstauglichen Zutaten aus.</p>
+            </details>
+            <details>
+              <summary>Wie erhalte ich den Plan?</summary>
+              <p>Der Plan ist als Sofort-Download gedacht. In dieser ersten Version der Seite ist der Shop noch nicht angebunden – du kannst dein Bundle schon vormerken.</p>
+            </details>
+            <details>
+              <summary>Ersetzt das eine Ernährungsberatung?</summary>
+              <p>Nein. stressfreiessen ist eine praktische Essensplanung für den Familienalltag, inklusive Allergenhinweis und Haftungsausschluss. Bei Unverträglichkeiten oder medizinischen Fragen bleibt die Fachperson die richtige Adresse.</p>
+            </details>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <div>
+          <p class="footer-brand">stressfreiessen</p>
+          <p>Der Familien-Ernährungsplan für Familien mit kleinen Kindern.</p>
+        </div>
+        <div>
+          <p><strong>Hinweis</strong></p>
+          <p>Praktische Planung für den Alltag. Kein Ersatz für medizinische oder ernährungstherapeutische Beratung.</p>
+        </div>
+        <div>
+          <p><strong>Diese erste Version</strong></p>
+          <p>Preise wie im Angebot: Basis CHF 14.90, Komplett CHF 24.90. Eine Vormerkung bleibt nur in deinem Browser gespeichert.</p>
+        </div>
+      </div>
+    </footer>
+
+    <dialog class="order-dialog" id="bestellen">
+      <form method="dialog" id="vormerk-form">
+        <button class="dialog-close" type="button" data-close value="cancel" aria-label="Schliessen">×</button>
+        <p class="bundle-kicker" id="dialog-kicker">Bundle</p>
+        <h2 id="dialog-title">Basis vormerken</h2>
+        <p class="dialog-lead" id="dialog-lead">CHF 14.90 · digitaler Ernährungsplan</p>
+        <p class="dialog-note">Der Shop ist in dieser ersten Version noch nicht angebunden. Deine Vormerkung wird nur auf diesem Gerät gespeichert.</p>
+        <label>
+          Name
+          <input name="name" type="text" autocomplete="name" required maxlength="80" />
+        </label>
+        <label>
+          E-Mail
+          <input name="email" type="email" autocomplete="email" required maxlength="120" />
+        </label>
+        <button class="btn btn-orange btn-block" type="submit">Bundle vormerken</button>
+        <p class="form-success" hidden id="form-success">Ist notiert. Dein Bundle bleibt auf diesem Gerät gespeichert, bis der Shop live geht.</p>
+      </form>
+    </dialog>
+
+    <script src="js/main.js"></script>
+  </body>
 </html>
